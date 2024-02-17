@@ -1,8 +1,4 @@
 
-To write a comprehensive README for the project involving a transactions table with filtering, search, and pagination functionalities, follow this structured format:
-
-markdown
-Copy code
 # Transactions Dashboard
 
 This project provides a comprehensive solution for displaying and managing transaction data. It includes a React-based frontend that features a transactions table with capabilities for month-based filtering, text search, pagination, and detailed visualization through bar and pie charts. The backend, built with Node.js and Express, offers RESTful APIs to support these features.
