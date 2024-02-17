@@ -5,7 +5,7 @@ const TransactionStatistics = ({month}) => {
     const [loading, setLoading] = useState(true);
 
     const fetchStatistics = () => {
-        axios.get('http://localhost:8000/api/v1/charts/statistics', {
+        axios.get('https://roxiler-assignment-ql8o.onrender.com/api/v1/charts/statistics', {
             params: {
                 month: month
             }

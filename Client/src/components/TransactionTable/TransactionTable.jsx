@@ -5,7 +5,7 @@ const TransactionTable = (props) => {
     const [loading, setLoading] = useState(true);
     const [transactions, setTransactions] = useState([]);
     const fetchTransactions = () => {
-        axios.get('http://localhost:8000/api/v1/transactions',{
+        axios.get('https://roxiler-assignment-ql8o.onrender.com/api/v1/transactions',{
           params: {
             page:page,
             limit:limit,

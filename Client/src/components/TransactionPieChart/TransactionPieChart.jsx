@@ -6,7 +6,7 @@ const TransactionPieChart = ({month}) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const fetchData = () => {
-        axios.get('http://localhost:8000/api/v1/charts/pie-chart', {
+        axios.get('https://roxiler-assignment-ql8o.onrender.com/api/v1/charts/pie-chart', {
             params: {
                 month: month
             }

@@ -7,7 +7,7 @@ const TransactionBarChart = ({month}) => {
     const [loading, setLoading] = useState(true);
 
     const fetchBarChart = () => {
-        axios.get('http://localhost:8000/api/v1/charts/bar-chart', {
+        axios.get('https://roxiler-assignment-ql8o.onrender.com/api/v1/charts/bar-chart', {
             params: {
                 month: month
             }
