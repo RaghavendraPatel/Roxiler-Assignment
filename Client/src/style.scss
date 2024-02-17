@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: 100vh;
+    background-color: #ccc;
+    padding: 2rem;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        .title{
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            padding: 1rem;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding:2rem;
+        background-color: white;
+        border-radius: 10px;
+        gap: 2rem;
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding:2rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .control{
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            input{
+                padding: 1rem;
+                border-radius: 10px 0 0 10px;
+                border: 1px solid #ccc;
+            }
+            button{
+                padding: 1rem;
+                border-radius: 0 10px 10px 0;
+                border: 1px solid #ccc;
+                background-color: #f2f2f2;
+                &:hover{
+                    background-color: #e6e6e6;
+                    cursor: pointer;
+                }
+            }
+            select{
+                padding: 1rem;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+        }
+
+        .page--control{
+            margin-top: 10px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            button{
+                padding: 1rem;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                background-color: #f2f2f2;
+                &:hover{
+                    background-color: #e6e6e6;
+                    cursor: pointer;
+                }
+            }
+            .page{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    padding: 1rem;
+                    border-radius: 10px 0 0 10px;
+                    border: 1px solid #ccc;
+                    background-color: #f2f2f2;
+                
+                };
+                span{
+                    padding: 1rem;
+                    border-radius: 0 10px 10px 0;
+                    border: 1px solid #ccc;
+                    background-color: #f2f2f2;
+                }
+            }
+            .perpage{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    padding: 1rem;
+                    border-radius: 10px 0 0 10px;
+                    border: 1px solid #ccc;
+                    background-color: #f2f2f2;
+                };
+                input{
+                    padding: 1rem;
+                    border-radius: 0 10px 10px 0;
+                    border: 1px solid #ccc;
+                }
+            }
+
+        }
+    }
+
+    .transaction--table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        .transaction--table th,
+        .transaction--table td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+        }
+        
+        .transaction--table th {
+            background-color: #f2f2f2;
+        }
+        
+        .transaction--table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .transaction--table td {
+            word-wrap: break-word; 
+        }
+    }
+
+    .transaction--charts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding:2rem;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        gap: 2rem;
+        span{
+            text-transform: capitalize;
+        }
+        .barchart{
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+        .piechart{
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    }
+    
+    .transaction--statistics{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding:2rem;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        gap: 2rem;
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            width: 100%;
+            .statistics--container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                border: 1px solid #ccc;
+                padding: 1rem;
+                border-radius: 10px;
+                height: 100px;
+                .title{
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+  
+}
